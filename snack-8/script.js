@@ -27,7 +27,10 @@ const students = [
 //   }
 // })
 // console.log(classeMarcoLanci);
-const classeMarcoLanci = students.find(function ({ name }) {
-  return name === "Marco Lanci"
-})
-console.log(classeMarcoLanci.class);
+const { class: classeMarcoLanci } = (students.find(function ({ name: nome }) {
+  return nome === "Marco Lanci"
+}));
+
+console.log(classeMarcoLanci);
+
+
