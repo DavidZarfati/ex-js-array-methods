@@ -8,7 +8,6 @@ const people = [
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
 const nomi = people.map(({ name }) => {
-  return name
+  console.log(name)
 }
 )
-console.log(nomi)
